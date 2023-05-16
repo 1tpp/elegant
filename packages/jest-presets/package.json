@@ -1,0 +1,12 @@
+{
+  "name": "jest-presets",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^26.0.24"
+  },
+  "devDependencies": {
+    "ts-jest": "^23.1.4"
+  }
+}
