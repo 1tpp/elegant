@@ -13,7 +13,7 @@ export const createServer: any = () => {
     .use(cors())
     .get("/message/:name", (req, res) => {
       return res.json({ message: `hello ${req.params.name}` });
-    })
+    });
 
   return app;
 };
