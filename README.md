@@ -62,5 +62,6 @@ pnpm build
 ```bash
 # create network
 docker network create -d bridge elegant_network
-docker-compose up
+
+docker-compose up 
 ```
