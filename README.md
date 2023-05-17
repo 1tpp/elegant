@@ -5,12 +5,14 @@
 This Turborepo includes the following packages/apps:
 
 ### Apps and Packages
- 
+
 #### `/apps`
+
 - `web`: another [Next.js](https://nextjs.org/) app with [Tailwind CSS](https://tailwindcss.com/)
 - `api`: a api server using [express](https://expressjs.com/) and [TypeScript](https://www.typescriptlang.org/)
 
 #### `/packages`
+
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `eslint-config-custom-server`: `eslint` configurations for server-side code (includes `eslint-config` and `jest`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
@@ -30,12 +32,12 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
-
 # Getting Started
 
 ## Prerequisites
-- [pnpm](https://pnpm.io/) (>= 6.0.0)
-- [Node.js](https://nodejs.org/en/) (>= 14.0.0)
+
+- [yarn](https://yarnpkg.com/) (>= 1.22.0)
+- [Node.js](https://nodejs.org/en/) (>= 18.0.0)
 
 ## Installation
 
@@ -55,3 +57,10 @@ pnpm dev
 pnpm build
 ```
 
+## Running with docker compose
+
+```bash
+# create network
+docker network create -d bridge elegant_network
+docker-compose up
+```
